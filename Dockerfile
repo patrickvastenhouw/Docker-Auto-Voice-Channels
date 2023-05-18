@@ -18,6 +18,7 @@ WORKDIR /AutoVoiceChannels
 
 RUN apt-get -y install build-essential &&\
     pip install -r /AutoVoiceChannels/requirements.txt &&\
+    pip install pynacl &&\
     apt-get -y remove build-essential
     
 # Clear unused files
